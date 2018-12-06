@@ -53,7 +53,7 @@ var (
 	}
 )
 
-// These settings ensure that TOML keys use the same names as Go struct fields.
+// These settings ensure that TOML keys use the same names as Go struct fields. 确保toml设置使用相同的键名
 var tomlSettings = toml.Config{
 	NormFieldName: func(rt reflect.Type, key string) string {
 		return key
